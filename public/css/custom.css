@@ -1,0 +1,52 @@
+body{
+background-color: crimson;
+}
+a{
+    color: black;
+    font-weight: 600;
+    display:inline-block;
+}
+img{
+    display: block;
+}
+
+.table{
+    width: 100%!important;
+     }
+    
+    
+     .mycustonTable{
+         width:250px!important;
+         margin:0 auto;
+     }
+    
+    
+     .mycustonTable thead{
+         background:black;
+         color:white;
+     }
+    
+     
+     .mycustonTable thead tr td{
+        width:20%;
+    }
+    
+    
+    @media print
+    {    
+        .no-print, .no-print *
+        {
+            display: none !important;
+        }
+    }
+    
+    
+    .td{  background: #000;
+        color: #fff;}
+    
+    
+    
+        .myclass{
+            width:100%;
+            padding:1rem!important;
+        }
