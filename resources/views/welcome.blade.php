@@ -130,7 +130,6 @@
 
 <!-- Top menu -->
 
-    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,7 +144,7 @@
 
   <!--<div class="container-fluid">-->
   <div class="container">
-  <span class="badge rounded-pill bg-success">Stay Safe!!!</span>
+ 
     <a class="navbar-brand" href="/Home"><i><b><h1>Honest Bakers</h1></b></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -233,7 +232,7 @@
 <div class="spinner-grow text-dark" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-
+<span class="badge rounded-pill bg-success"><h4>Stay Safe!!!</h4></span>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 
@@ -280,7 +279,7 @@
       <img height='540px'src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FmZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img height='500px' src="https://media-cdn.tripadvisor.com/media/photo-s/19/e6/0c/dd/img-20191030-124730-largejpg.jpg" class="d-block w-100" alt="...">
+      <img height='500px' src="https://www.wallpapertip.com/wmimgs/50-504684_coffee-shop-background-cafe.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
