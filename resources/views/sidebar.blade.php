@@ -8,7 +8,7 @@
   <a href="/management/table" class="list-group-item list-group-item-action"><i class="fas fa-chair"></i>
 
  Place Orders</a>
-  <a href="/management/users" class="list-group-item list-group-item-action"><i class="far fa-user"></i>
+  <a href="/management/feedback" class="list-group-item list-group-item-action"><i class="far fa-user"></i>
 
  Feedbacks</a>
 </div>

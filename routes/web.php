@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controller\cashier\feedbackController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 
 
@@ -57,15 +58,11 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/cashier/confirmOrder', 'cashier\cashierController@confirmOrder');
     Route::post('/cashier/deleteOrder', 'cashier\cashierController@deleteOrder');
     Route::post('/cashier/savePayment', 'cashier\cashierController@savePayment');
-    
-    
-    
-    
+    Route::get('/cashier/feedback', 'management\feedbackController@create');
+    Route::get('/management/feedback', 'management\feedbackController@index');
+    Route::post('/ReadFeedback', 'management\feedbackController@store');
 
 });
-
-
-
 
 Route::middleware(['auth','verifyAdmin'])->group(function(){
 
@@ -79,8 +76,7 @@ Route::middleware(['auth','verifyAdmin'])->group(function(){
     Route::resource('/management/category', 'management\categoryController');
     Route::resource('/management/menu', 'management\menuController');
     Route::resource('/management/table', 'management\tableController');
-  
-    
+  //  Route::resource('/cashier/feedback', 'management\feedbackController');
 });
 
 

@@ -31,6 +31,13 @@
                         Place Orders</a>
                         </div>
 
+                        @if(!(Auth::user()->checkAdmin()))
+                        <div class="col-sm-4">
+                        <a href="/cashier/feedback">  <img src="{{asset('image/report.png')}}" height="100" width="100">
+                        Feedback</a>
+                        </div>
+                        @endif
+
                           @if(Auth::user()->checkAdmin())
                         <div class="col-sm-4">
                         <a href="/report">  <img src="{{asset('image/report.png')}}" height="100" width="100">
