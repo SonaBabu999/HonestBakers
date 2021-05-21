@@ -21,19 +21,26 @@
     Auth::routes(['reset'=> false]);
     Route::get('/home', 'HomeController@index')->name('home');
     
-    Route::get('/feedback', function () {
-      return redirect('management');
-    });
-    Route::get('/management', function () {
-      return view('home');
-    });
-    Route::get('/management', function () {
-      return view('welcome');
-    });
+    
   
+    Route::group(['middleware' => 'PreventBackHistory'],function(){
+
+      Auth::routes();
+    
+      Route::get('/home', 'HomeController@index');
+
+      Route::get('/feedback', function () {
+        return redirect('management');
+      });
+      Route::get('/management', function () {
+        return view('home');
+      });
+      Route::get('/management', function () {
+        return redirect('home');
+      });
     
     
-      
+    //Route::middleware(['auth'])->group(function(){
     
       
         
@@ -54,8 +61,8 @@
         Route::get('/cashier/feedback', 'management\feedbackController@create');
         Route::get('/management/feedback', 'management\feedbackController@index');
         Route::post('/ReadFeedback', 'management\feedbackController@store');
-      
-        
+  
+       //Route::middleware(['auth','verifyAdmin'])->group(function(){
     
         Route::get('/report', 'report\reportController@index');
         Route::get('/report/show', 'report\reportController@show');
@@ -65,6 +72,6 @@
         Route::resource('/management/category', 'management\categoryController');
         Route::resource('/management/menu', 'management\menuController');
         Route::resource('/management/table', 'management\tableController');
-   
-        
+       });
+    
   
