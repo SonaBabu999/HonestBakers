@@ -47,7 +47,7 @@
           
             <td>  <img src="{{asset('uploaded_img')}}/{{$m->image}}" height='100' width='100' alt=""></td>
             <td>{{$m->description}}</td> 
-            <td>{{$m->getCat[0]->name}}</td> 
+            <td>{{$m->cat_id}}</td> 
             
             <td><a href="/management/menu/{{$m->id}}/edit" class='btn btn-warning'>Edit</a></td>
             <td>

@@ -26,6 +26,13 @@ class Handler extends ExceptionHandler
         'password',
         'password_confirmation',
     ];
+    /*public function render($request)
+    {
+        if ($exception instanceof \Illuminate\Session\TokenMismatchException) {
+            return redirect()->route('login');
+        }
+            }*/
+
 
     /**
      * Register the exception handling callbacks for the application.
