@@ -2,17 +2,14 @@
 
 @section('content')
 
- 
-
-
 
 <div class="container">
 
 <ul class = "breadcrumb">
               
-               <li class = "breadcrumb-item"><a href = "./management">Home</a></li>
-               <li class = "breadcrumb-item"><a href="./report">Report</a></li>
-               <li class = "breadcrumb-item active"><a href="./report/show">Show Report</a></li>
+               <li class = "breadcrumb-item"><a href = "/management">Home</a></li>
+               <li class = "breadcrumb-item"><a href="/report">Report</a></li>
+               <li class = "breadcrumb-item active"><a href="/report/show">Show Report</a></li>
             </ul>
  
 
@@ -33,7 +30,7 @@
         {{ $error }}    
         </div> 
         @endforeach
-        <form action="./report/show" method='get'>
+        <form action="/report/show" method='get'>
         @csrf
         <div class="row"> 
         <div class="col-12">
@@ -88,7 +85,7 @@ No Data Found On  Date between {{$dateStart}} and {{$dateEnd}}
 
 
 
-            <form action="./report/show/excel" method='get'>
+            <form action="/report/show/excel" method='get'>
             @csrf
             <input type="hidden" name='dateStart' value='{{$dateStart}}'>
             <input type="hidden" name='dateEnd' value='{{$dateEnd}}'>
