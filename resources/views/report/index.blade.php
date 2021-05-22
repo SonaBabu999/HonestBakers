@@ -2,16 +2,12 @@
 
 @section('content')
 
- 
-
-
-
 <div class="container">
  
 <ul class = "breadcrumb">
               
-               <li class = "breadcrumb-item"><a href = "./management">Home</a></li>
-               <li class = "breadcrumb-item active"><a href="./report">Report</a></li>
+               <li class = "breadcrumb-item"><a href = "/management">Home</a></li>
+               <li class = "breadcrumb-item active"><a href="/report">Report</a></li>
              
             </ul>
 
@@ -32,7 +28,7 @@
         {{ $error }}    
         </div> 
         @endforeach
-        <form action="./report/show" method='get'>
+        <form action="/report/show" method='get'>
         @csrf
         <div class="row">
            
