@@ -21,8 +21,8 @@
     Auth::routes(['reset'=> false]);
     Route::get('/home', 'HomeController@index')->name('home');
     
-    Route::get('/signup',[Auth\LoginController::class,'createadm']);
-    Route::post('/ReadAdmin',[Auth\LoginController::class,'store']);
+    Route::get('/signup','cashier\cashierController@createadm');
+    Route::post('/ReadAdmin','cashier\cashierController@storeadm');
 
   
     Route::group(['middleware' => 'PreventBackHistory'],function(){

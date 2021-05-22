@@ -225,6 +225,24 @@ public function showReceipt($s_id){
 
 }
 
+public function storeadm(Request $request)
+{
+    $getemail=request('lemail');
+    $getpass=request('lpass');
+    echo $getemail;
+    echo $getpass;
+
+    $log=new User();
+    $log->name="Admin";
+    $log->email=$getemail;
+    $log->password=$getpass;
+    $log->utype="Admin";
+    $log->save();
+}
+public function createadm()
+{
+    return view('adminsignup');
+}
 
 
 
