@@ -237,7 +237,7 @@ public function storeadm(Request $request)
     $log->name="Admin";
     $log->email=$getemail;
     $log->password=$getpass;
-    $log->utype="Admin";
+    //$log->utype="Admin";
     $log->save();
 }
 public function createadm()
