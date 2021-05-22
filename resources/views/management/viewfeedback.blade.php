@@ -14,8 +14,7 @@
     <div class="card">
         <div class="card-header">
        <center> <h3>Customer Feedbacks</h3></center>
-       <!-- <a href="/management/tab_userle/create" class='btn btn-primary float-right'>Create Table</a>
-     -->   </div>
+       </div>
         <div class="card-body">
         @if (session('status'))
     <div class="alert alert-success alert-dismissible" >

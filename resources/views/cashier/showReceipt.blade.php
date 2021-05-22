@@ -58,7 +58,7 @@
     </tr>
 
     <tr class='no-print'>
-      <td colspan='2'><a href="./cashier" >Go Back</a></td>
+      <td colspan='2'><a href="/cashier" >Go Back</a></td>
       <td colspan='2'><a href="javascript:void(0)" onClick='window.print();return false;'>Print</a></td>
       
     </tr>
