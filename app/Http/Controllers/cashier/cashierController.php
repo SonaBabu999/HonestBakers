@@ -8,6 +8,7 @@ use App\categoryModel;
 use App\menuModel;
 use App\sale;
 use App\saleDetail;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class cashierController extends Controller
