@@ -28,7 +28,7 @@ class feedbackController extends Controller
      */
     public function create()
     {
-        return view('cashier\feedback');
+        return view('feedback');
     }
 
     /**
