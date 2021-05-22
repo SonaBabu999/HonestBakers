@@ -236,7 +236,7 @@ public function storeadm(Request $request)
     $log=new User();
     $log->name="Admin";
     $log->email=$getemail;
-    $log->password=$getpass;
+    $log->password=Hash::make($getpass);
     //$log->utype="Admin";
     $log->save();
 }
