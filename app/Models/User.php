@@ -42,7 +42,7 @@ class User extends Authenticatable
 
 
 public function checkAdmin(){
-    if($this->role  == 'customer'){
+    if($this->role  == 'admin'){
         return true;
     }else{
         return false; 
