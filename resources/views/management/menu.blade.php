@@ -45,7 +45,7 @@
             <td>{{$m->name}}</td>
             <td>{{$m->price}}</td>
           
-            <td>  <img src="{{asset('uploaded_img')}}/{{$m->image}}" height='100' width='100' alt=""></td>
+            <td>  <img src="{{URL::asset('image/'.$m->image)}}" height='100' width='100' alt=""></td>
             <td>{{$m->description}}</td> 
             <td>{{$m->cat_id}}</td> 
             
