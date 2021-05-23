@@ -48,25 +48,26 @@ class menuController extends Controller
             'cat_id' => 'required'
         ]);
 
-        $imageName = 'noimgfound.jpg';
+//        $imageName = 'noimgfound.jpg';
         
-        if($request->image){
-$request->validate([
-	'image' => 'nullable|file|image|mimes:jpeg,png,jpg|max:5000'
- ]);
+//         if($request->image){
+// $request->validate([
+// 	'image' => 'nullable|file|image|mimes:jpeg,png,jpg|max:5000'
+//  ]);
 
  
-$imageName = date('mdYHis').uniqid().'.'.$request->image->extension();
-//$pathToFile = Storage::disk('public')->put('uploads/', $file);
-$request->image->move(public_path('uploaded_img'),$imageName);
-}
+// $imageName = date('mdYHis').uniqid().'.'.$request->image->extension();
+
+// $request->image->move(public_path('uploaded_img'),$imageName);
+//}
+$pathToFile = Storage::disk('public')->put('uploads/', $file);
         
 
         $mod_menu  = new menuModel;
         $mod_menu->name = $request->name;
         $mod_menu->price = $request->price;
         $mod_menu->description = $request->description;
-        $mod_menu->image = $imageName;
+        $mod_menu->image = $pathToFile;
         $mod_menu->cat_id = $request->cat_id;
         $mod_menu->save();
 
