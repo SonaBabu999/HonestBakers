@@ -60,14 +60,14 @@ class menuController extends Controller
 
 // $request->image->move(public_path('uploaded_img'),$imageName);
 //}
-$pathToFile = Storage::disk('public')->put('uploads/', $file);
+// $pathToFile = Storage::disk('public')->put('uploads/', $file);
         
 
         $mod_menu  = new menuModel;
         $mod_menu->name = $request->name;
         $mod_menu->price = $request->price;
         $mod_menu->description = $request->description;
-        $mod_menu->image = $pathToFile;
+         $mod_menu->image = "no image";
         $mod_menu->cat_id = $request->cat_id;
         $mod_menu->save();
 

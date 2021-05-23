@@ -31,7 +31,7 @@
             <td>id</td>
             <td>Name</td>
             <td>Price</td>
-            <td>Image</td>
+            <!-- <td>Image</td> -->
             <td>Description</td> 
             <td>Category</td> 
             <td>Edit</td>
@@ -45,7 +45,7 @@
             <td>{{$m->name}}</td>
             <td>{{$m->price}}</td>
           
-            <td>  <img src="{{asset('uploaded_img')}}/{{$m->image}}" height='100' width='100' alt=""></td>
+            <!-- <td>  <img src="{{asset('uploaded_img')}}/{{$m->image}}" height='100' width='100' alt=""></td> -->
             <td>{{$m->description}}</td> 
             <td>{{$m->cat_id}}</td> 
             
