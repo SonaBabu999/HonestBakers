@@ -36,10 +36,10 @@
             <input type="text" class='form-control' name='price'>
         </div>
 
-        <!-- <div class="form-group">
+        <div class="form-group">
             <label for="">Image</label>
             <input type="file" class='form-control' name='image'>
-        </div> -->
+        </div>
 
         <div class="form-group">
             <label for="">Description</label>

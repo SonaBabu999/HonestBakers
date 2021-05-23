@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 Use App\categoryModel;
 Use App\menuModel;
-use Illuminate\Support\Facades\Storage;
+//use Illuminate\Support\Facades\Storage;
 
 class menuController extends Controller
 {
@@ -48,18 +48,18 @@ class menuController extends Controller
             'cat_id' => 'required'
         ]);
 
-//        $imageName = 'noimgfound.jpg';
+       $imageName = 'noimgfound.jpg';
         
-//         if($request->image){
-// $request->validate([
-// 	'image' => 'nullable|file|image|mimes:jpeg,png,jpg|max:5000'
-//  ]);
+        if($request->image){
+$request->validate([
+	'image' => 'nullable|file|image|mimes:jpeg,png,jpg|max:5000'
+ ]);
 
  
-// $imageName = date('mdYHis').uniqid().'.'.$request->image->extension();
+$imageName = date('mdYHis').uniqid().'.'.$request->image->extension();
 
-// $request->image->move(public_path('uploaded_img'),$imageName);
-//}
+$request->image->move(public_path('uploaded_img'),$imageName);
+}
 // $pathToFile = Storage::disk('public')->put('uploads/', $file);
         
 
