@@ -61,7 +61,7 @@ class menuController extends Controller
 $getimage = $request->file('image');
 $name = $getimage->getClientOriginalName();
 $getimage->move(public_path('image/'),$name);
-}
+// }
 // $pathToFile = Storage::disk('public')->put('uploads/', $file);
         
 
