@@ -34,18 +34,18 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
-        'public' => [
-            'driver' => 'local',
-            'root' => public_path(),
-            'url' => env('APP_URL').'/public',
-            'visibility' => 'public',
-        ],
-       // 'public' => [
-           // 'driver' => 'local',
-            //'root' => storage_path('app/public'),
-            //'url' => env('APP_URL').'/storage',
+      //  'public' => [
+          //  'driver' => 'local',
+           // 'root' => public_path(),
+            //'url' => env('APP_URL').'/public',
            // 'visibility' => 'public',
-       // ],
+      //  ],
+       'public' => [
+         'driver' => 'local',
+           'root' => storage_path('app/public'),
+           'url' => env('APP_URL').'/storage',
+           'visibility' => 'public',
+        ],
 
         's3' => [
             'driver' => 's3',

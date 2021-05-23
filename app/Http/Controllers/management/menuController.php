@@ -57,7 +57,7 @@ $request->validate([
 
  
 $imageName = date('mdYHis').uniqid().'.'.$request->image->extension();
-$pathToFile = Storage::disk('public')->put('uploads/', $file);
+//$pathToFile = Storage::disk('public')->put('uploads/', $file);
 $request->image->move(public_path('uploaded_img'),$imageName);
 }
         
