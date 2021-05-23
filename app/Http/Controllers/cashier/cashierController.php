@@ -47,7 +47,7 @@ class cashierController extends Controller
         foreach($menu_d as $m){
             $html .= "<div class='col-4' >";
             $html .= "<a href='javascript:void(0)' >
-            <img class='btn-selected-menu' src='image/.$m->image' data-id='".$m->id."' height=150   width=150 >
+            <img class='btn-selected-menu' src='image/".$m->image."' data-id='".$m->id."' height=150   width=150 >
             <div class='text-center'>
             ".$m->name."</div>
             <div class='text-center'>
