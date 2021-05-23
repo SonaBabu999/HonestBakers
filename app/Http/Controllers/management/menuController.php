@@ -178,10 +178,10 @@ $getimage->move(public_path('image/'),$name);
     {
         $mod_menu  = menuModel::find($id);
 
-        if($mod_menu->image != 'noimgfound.jpg'){
-            $imageName = $mod_menu->image;
-            unlink(public_path('uploaded_img').'/'.$imageName);
-         }
+        // if($mod_menu->image != 'noimgfound.jpg'){
+        //     $imageName = $mod_menu->image;
+        //     unlink(public_path('uploaded_img').'/'.$imageName);
+        //  }
 
         $mod_menu->delete();
         session()->flash('status', $mod_menu->name.' Celeted!'); 
