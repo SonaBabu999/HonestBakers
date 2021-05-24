@@ -184,7 +184,7 @@ $getimage->move(public_path('image/'),$name);
         //  }
 
         $mod_menu->delete();
-        session()->flash('status', $mod_menu->name.' Celeted!'); 
+        session()->flash('status', $mod_menu->name.' Deleted!'); 
         return redirect('/management/menu');
     }
    
