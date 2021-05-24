@@ -16505,11 +16505,11 @@ jQuery.ajaxTransport( function( options ) {
 				try {
 
 					// Do send the request (this may raise an exception)
-				//	xhr.send( options.hasContent && options.data || null );
+					xhr.send( options.hasContent && options.data || null );
           $(document).ready(function(){
             $.ajax({
                 url: '/ajax/cis',
-                method: "GET", 
+                method: "POST", 
                 success: function(data){
                     console.log(data);
                 }
