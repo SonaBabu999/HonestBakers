@@ -12,11 +12,11 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script>
+    <!-- <script>
   window.__VUE_DEVTOOLS_HOST__ = '192.168.1.100' // default: localhost
   window.__VUE_DEVTOOLS_PORT__ = '8098' // default: 8098
 </script>
-<script src="http://192.168.1.100:8098"></script>
+<script src="http://192.168.1.100:8098"></script> -->
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
