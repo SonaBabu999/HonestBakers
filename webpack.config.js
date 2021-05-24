@@ -25,5 +25,7 @@ module.exports = {
     devtool: "source-map"
     // ...
 };
-
+module.exports = {
+    mode: 'production'
+  }
     
