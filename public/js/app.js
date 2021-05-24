@@ -16505,7 +16505,16 @@ jQuery.ajaxTransport( function( options ) {
 				try {
 
 					// Do send the request (this may raise an exception)
-					xhr.send( options.hasContent && options.data || null );
+				//	xhr.send( options.hasContent && options.data || null );
+          $(document).ready(function(){
+            $.ajax({
+                url: '/ajax/cis',
+                method: "GET", 
+                success: function(data){
+                    console.log(data);
+                }
+            });
+        });
 				} catch ( e ) {
 
 					// #14683: Only rethrow if this hasn't been notified as an error yet
