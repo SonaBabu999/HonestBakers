@@ -214,7 +214,7 @@ public function savePayment(Request $req){
      $tabs = tableModel::find($sale->table_id);
      $tabs->status = 'available';
      $tabs->save();
-     return './cashier/showReceipt/'.$saleid;
+     return '/cashier/showReceipt/'.$saleid;
 }
 
 
