@@ -12,6 +12,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
     <!-- <script>
   window.__VUE_DEVTOOLS_HOST__ = '192.168.1.100' // default: localhost
   window.__VUE_DEVTOOLS_PORT__ = '8098' // default: 8098

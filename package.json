@@ -5,15 +5,19 @@
         "development": "mix",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "build": "webpack --config webpack.config.js",
         "hot": "mix watch --hot",
         "prod": "npm run production",
         "production": "mix --production"
     },
     "devDependencies": {
+       
         "@fortawesome/fontawesome-free": "^5.15.3",
         "@vue/devtools": "^5.3.4",
         "axios": "^0.21",
         "bootstrap": "^4.6.0",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3",
         "jquery": "^3.6",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
