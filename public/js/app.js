@@ -46633,6 +46633,7 @@ Vue.prototype.$mount = function (
 
 // devtools global hook
 /* istanbul ignore next */
+/*
 if (inBrowser) {
   setTimeout(function () {
     if (config.devtools) {
@@ -46659,7 +46660,7 @@ if (inBrowser) {
     }
   }, 0);
 }
-
+*/
 /*  */
 
 var defaultTagRE = /\{\{((?:.|\r?\n)+?)\}\}/g;
