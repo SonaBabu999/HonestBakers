@@ -162,7 +162,7 @@ if(SELECTED_TABLE_ID == ' '){
     alert('menus cant be selected unless, Table is selected');
 }else{
     SELECTED_MENU_ID = $(this).data('id')
-    console.log(SELECTED_MENU_ID +" "+   SELECTED_TABLE_ID  +" "+ SELECTED_TABLE_NAME)
+   // console.log(SELECTED_MENU_ID +" "+   SELECTED_TABLE_ID  +" "+ SELECTED_TABLE_NAME)
     $.ajax({
         type:"POST",
         url: "/cashier/orderFood", 
